@@ -1,0 +1,12 @@
+pluginManagement {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    plugins {
+        id "${quarkusPluginId}" // version "${quarkusPluginVersion}"
+    }
+}
+includeBuild('[PATH_TO_WHERE_YOU_CLONED_MY_BRANCH]/devtools/gradle')
+rootProject.name='config-cache-compatibility'
